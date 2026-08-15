@@ -7,9 +7,9 @@
     <style>
         :root {
             --bg-color: #0f172a;
-            --card-bg: #1e293b;
+            --card-bg: rgba(30, 41, 59, 0.85);
             --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
+            --text-secondary: #cbd5e1;
             --accent-color: #38bdf8;
             --accent-hover: #0284c7;
             --border-color: #334155;
@@ -24,6 +24,11 @@
 
         body {
             background-color: var(--bg-color);
+            background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.92)), url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: var(--text-primary);
             line-height: 1.6;
             padding: 2rem 1rem;
@@ -38,6 +43,9 @@
             text-align: center;
             padding: 3rem 1rem 2rem 1rem;
             border-bottom: 1px solid var(--border-color);
+            background: var(--card-bg);
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
         }
 
         .profile-img {
@@ -100,6 +108,7 @@
             border: 1px solid var(--border-color);
             font-weight: 500;
             font-size: 0.95rem;
+            backdrop-filter: blur(4px);
         }
 
         .timeline {
@@ -113,6 +122,7 @@
             padding: 1.5rem;
             border-radius: 8px;
             border: 1px solid var(--border-color);
+            backdrop-filter: blur(8px);
         }
 
         .role-title {
@@ -146,7 +156,7 @@
         .btn {
             display: inline-block;
             background-color: var(--accent-color);
-            color: var(--bg-color);
+            color: #0f172a;
             padding: 0.75rem 1.5rem;
             border-radius: 6px;
             text-decoration: none;
@@ -186,17 +196,17 @@
             <img src="profile.jpg" alt="Ajith P" class="profile-img">
             <h1>AJITH P</h1>
             <p class="subtitle">Manufacturing & NPI Engineer</p>
-            <p class="location">EV Assembly | Industrialization | Process Validation | Continuous Improvement</p>
+            <p class="location">EV Assembly | Industrialization | DFM / DFA | Process Validation | Continuous Improvement</p>
         </header>
 
         <!-- About Section -->
         <section class="about">
             <h2>Professional Summary</h2>
             <p>
-                Manufacturing & Industrialization Engineer with 6+ years of experience taking electromechanical products from concept to Start of Production (SOP), including complete EV assembly lines, gearbox/drivetrain lines, and commercial robotics hardware.
+                Manufacturing & Industrialization Engineer with 6+ years of experience taking electromechanical products from concept to Start of Production (SOP), including complete EV assembly lines, gearbox/drivetrain lines, and commercial robotics hardware[cite: 1, 2].
             </p>
             <p>
-                Skilled across the full industrialization lifecycle: DFA, DFM, MBOM and work-instruction development, PFMEA, control plans, line balancing, and manufacturing readiness assessments[cite: 2]. Six Sigma Green Belt with expertise in Lean Manufacturing, GD&T/tolerance stack-up analysis, and fixture design[cite: 1, 2].
+                Skilled across the full industrialization lifecycle: DFM, DFA, MBOM and work-instruction development, PFMEA, control plans, line balancing, and manufacturing readiness assessments[cite: 1, 2]. Six Sigma Green Belt with expertise in Lean Manufacturing, GD&T/tolerance stack-up analysis, and fixture design[cite: 1, 2].
             </p>
         </section>
 
@@ -204,7 +214,8 @@
         <section>
             <h2>Core Competencies</h2>
             <div class="skills-grid">
-                <span class="skill-tag">DFA, DFM, & NPI</span>
+                <span class="skill-tag">DFM & DFA</span>
+                <span class="skill-tag">NPI & Production Ramp-Up</span>
                 <span class="skill-tag">EV Assembly</span>
                 <span class="skill-tag">PFMEA & Control Plans</span>
                 <span class="skill-tag">Line Balancing & Takt Time</span>
@@ -226,7 +237,8 @@
                     <div class="company-meta">Ather Energy | Bengaluru, India (Mar 2022 – Present)[cite: 1, 2]</div>
                     <ul class="bullets">
                         <li>Owned end-to-end industrialization of a complete EV two-wheeler assembly line from concept to Start of Production (SOP)[cite: 1, 2].</li>
-                        <li>Led NPI industrialization of gearbox and transmission  lines with zero-defect inspection protocols[cite: 1, 2].</li>
+                        <li>Led NPI industrialization of gearbox and transmission lines with zero-defect inspection protocols[cite: 1, 2].</li>
+                        <li>Ran DFM and DFA reviews with design and supplier engineering teams during early development to optimize manufacturability[cite: 2].</li>
                         <li>Designed assembly fixtures and tooling using 3D CAD with GD&T stack-up analysis for high dimensional repeatability[cite: 1, 2].</li>
                         <li>Pioneered AGV integration into assembly lines to optimize material flow and reduce manual handling[cite: 1, 2].</li>
                     </ul>
@@ -238,7 +250,7 @@
                     <ul class="bullets">
                         <li>Supported full NPI lifecycle from concept through validated assembly for an AI-powered commercial cooking robot[cite: 1, 2].</li>
                         <li>Built prototype assembly line from scratch: station layouts, assembly sequences, SOPs, and inspection checkpoints[cite: 1, 2].</li>
-                        <li>Resolved prototype failures using structured root cause analysis to enable repeatable pre-series builds[cite: 1, 2].</li>
+                        <li>Led DFA reviews for build compliance and resolved prototype failures using structured root cause analysis[cite: 2].</li>
                     </ul>
                 </div>
 
