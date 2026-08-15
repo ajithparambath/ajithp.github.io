@@ -113,11 +113,12 @@
 
         .timeline {
             display: flex;
-            flex-direction: column;
+            flex-direction: flex-column;
             gap: 1.5rem;
+            flex-direction: column;
         }
 
-        .experience-card, .patent-card {
+        .experience-card, .patent-card, .academic-card {
             background-color: var(--card-bg);
             padding: 1.5rem;
             border-radius: 8px;
@@ -252,7 +253,7 @@
                     <ul class="bullets">
                         <li>Supported full NPI lifecycle from concept through validated assembly for an AI-powered commercial cooking robot.</li>
                         <li>Built prototype assembly line from scratch: station layouts, assembly sequences, SOPs, and inspection checkpoints.</li>
-                        <li>Led DFA reviews for build compliance and resolved prototype failures using structured root cause analysis[cite: 2].</li>
+                        <li>Led DFA reviews for build compliance and resolved prototype failures using structured root cause analysis.</li>
                     </ul>
                 </div>
 
@@ -263,6 +264,39 @@
                         <li>Coordinated integration, commissioning, and validation of automated production systems (SPMs) for automotive components.</li>
                         <li>Implemented Poka-Yoke systems to reduce human error and optimize line cycle times.</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Research Achievements Section -->
+        <section>
+            <h2>Academic Achievements & Research</h2>
+            <div class="timeline">
+                <div class="academic-card">
+                    <div class="role-title">Research Paper Publication</div>
+                    <div class="company-meta">IJIRSET (Vol. 5, Issue 8) | August 2016</div>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">
+                        <strong>Title:</strong> "A Study on the Heat Transfer Enhancement of Fin with Grooves by Natural Convection"
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">
+                        Authored as UG Scholar, Department of Mechanical Engineering, Coorg Institute of Technology (CIT), Ponnampet. (Certificate No: V5I8C058)
+                    </p>
+                </div>
+
+                <div class="academic-card">
+                    <div class="role-title">Automotive Design & Analysis Workshop</div>
+                    <div class="company-meta">National Technology Awareness Campaign (NTAC 2015-16) | October 2015</div>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">
+                        Awarded <em>Honorable Mention</em> certificate of participation for completing a 2-day hands-on workshop on vehicle systems design & analysis conducted by Codex Design Services in association with Techkriti '16, IIT Kanpur at NIT Calicut.
+                    </p>
+                </div>
+
+                <div class="academic-card">
+                    <div class="role-title">State-Level Science & Mathematics Fair</div>
+                    <div class="company-meta">Kerala School Science, Mathematics & Social Science Fair | January 2010</div>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">
+                        Secured <strong>Grade B</strong> for the Single Project 'Maths' (HS Section) representing RGMHS, Mokeri at Thrissur State Fair.
+                    </p>
                 </div>
             </div>
         </section>
