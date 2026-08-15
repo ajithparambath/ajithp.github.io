@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="AJITH P" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajith P | Manufacturing & NPI Engineer</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -36,20 +36,26 @@
 
         header {
             text-align: center;
-            padding: 3rem 1rem;
+            padding: 3rem 1rem 2rem 1rem;
             border-bottom: 1px solid var(--border-color);
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.75rem;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
         }
 
-        header p {
+        header p.subtitle {
             font-size: 1.25rem;
             color: var(--accent-color);
             font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        header p.location {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
         }
 
         section {
@@ -67,7 +73,8 @@
 
         .about p {
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
         }
 
         .skills-grid {
@@ -83,28 +90,41 @@
             border-radius: 6px;
             border: 1px solid var(--border-color);
             font-weight: 500;
+            font-size: 0.95rem;
         }
 
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        .timeline {
+            display: flex;
+            flex-direction: column;
             gap: 1.5rem;
         }
 
-        .project-card {
+        .experience-card, .patent-card {
             background-color: var(--card-bg);
             padding: 1.5rem;
             border-radius: 8px;
             border: 1px solid var(--border-color);
         }
 
-        .project-card h3 {
+        .role-title {
+            font-size: 1.2rem;
+            font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 0.5rem;
         }
 
-        .project-card p {
+        .company-meta {
+            color: var(--accent-color);
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        ul.bullets {
+            padding-left: 1.25rem;
             color: var(--text-secondary);
+        }
+
+        ul.bullets li {
+            margin-bottom: 0.5rem;
             font-size: 0.95rem;
         }
 
@@ -129,6 +149,16 @@
             background-color: var(--accent-hover);
         }
 
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+        }
+
         footer {
             text-align: center;
             margin-top: 4rem;
@@ -144,42 +174,92 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <h1>Your Name</h1>
-            <p>Manufacturing & Process Engineering Professional</p>
+            <h1>AJITH P</h1>
+            <p class="subtitle">Manufacturing & NPI Engineer</p>
+            <p class="location">EV Assembly | Industrialization | Process Validation | Continuous Improvement</p>
         </header>
 
         <!-- About Section -->
         <section class="about">
-            <h2>About Me</h2>
+            <h2>Professional Summary</h2>
             <p>
-                Experienced professional specializing in process engineering, continuous improvement, and operational optimization. Passionate about applying advanced methodologies to drive efficiency and product launch success.
+                Manufacturing & Industrialization Engineer with 6+ years of experience taking electromechanical products from concept to Start of Production (SOP), including complete EV assembly lines, high-voltage battery/PDU systems, gearbox/drivetrain lines, and commercial robotics hardware.
+            </p>
+            <p>
+                Skilled across the full industrialization lifecycle: DFMA, MBOM and work-instruction development, PFMEA, control plans, line balancing, and manufacturing readiness assessments. Six Sigma Green Belt with expertise in Lean Manufacturing, GD&T/tolerance stack-up analysis, and fixture design.
             </p>
         </section>
 
         <!-- Skills Section -->
         <section>
-            <h2>Core Expertise</h2>
+            <h2>Core Competencies</h2>
             <div class="skills-grid">
-                <span class="skill-tag">Process Optimization</span>
-                <span class="skill-tag">Six Sigma</span>
-                <span class="skill-tag">Manufacturing Engineering</span>
-                <span class="skill-tag">Product Launch Readiness</span>
-                <span class="skill-tag">Data Analysis</span>
-                <span class="skill-tag">CFD Analysis</span>
+                <span class="skill-tag">DFMA & NPI</span>
+                <span class="skill-tag">EV Assembly</span>
+                <span class="skill-tag">PFMEA & Control Plans</span>
+                <span class="skill-tag">Line Balancing & Takt Time</span>
+                <span class="skill-tag">Fixture & Jig Design</span>
+                <span class="skill-tag">Six Sigma Green Belt</span>
+                <span class="skill-tag">Cp/Cpk & Process Capability</span>
+                <span class="skill-tag">8D / 5-Why Root Cause Analysis</span>
+                <span class="skill-tag">SolidWorks & AutoCAD</span>
+                <span class="skill-tag">ANSYS (CFD)</span>
             </div>
         </section>
 
-        <!-- Featured Projects Section -->
+        <!-- Experience Section -->
         <section>
-            <h2>Key Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Process Optimization Drive</h3>
-                    <p>Streamlined manufacturing workflow, reducing line bottlenecks and boosting overall production throughput.</p>
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="experience-card">
+                    <div class="role-title">Senior Process Engineer (EV Manufacturing)</div>
+                    <div class="company-meta">Ather Energy | Bengaluru, India (Mar 2022 – Present)</div>
+                    <ul class="bullets">
+                        <li>Owned end-to-end industrialization of a complete EV two-wheeler assembly line from concept to Start of Production (SOP).</li>
+                        <li>Led NPI industrialization of gearbox/transmission and high-voltage battery pack/PDU lines with zero-defect inspection protocols.</li>
+                        <li>Designed assembly fixtures and tooling using 3D CAD with GD&T stack-up analysis for high dimensional repeatability.</li>
+                        <li>Pioneered AGV integration into assembly lines to optimize material flow and reduce manual handling.</li>
+                    </ul>
                 </div>
-                <div class="project-card">
-                    <h3>New Product Launch Readiness</h3>
-                    <p>Coordinated cross-functional readiness frameworks to ensure seamless scaling from prototype to full manufacturing.</p>
+
+                <div class="experience-card">
+                    <div class="role-title">Assembly Engineer (Robotics Prototyping)</div>
+                    <div class="company-meta">Posha (Nymble Labs) | Bengaluru, India (May 2021 – Mar 2022)</div>
+                    <ul class="bullets">
+                        <li>Supported full NPI lifecycle from concept through validated assembly for an AI-powered commercial cooking robot.</li>
+                        <li>Built prototype assembly line from scratch: station layouts, assembly sequences, SOPs, and inspection checkpoints.</li>
+                        <li>Resolved prototype failures using structured root cause analysis to enable repeatable pre-series builds.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="role-title">Jr. Engineer (Mechanical Integration)</div>
+                    <div class="company-meta">XNG Automation Solutions | Bengaluru, India (Jun 2019 – May 2021)</div>
+                    <ul class="bullets">
+                        <li>Coordinated integration, commissioning, and validation of automated production systems (SPMs) for automotive components.</li>
+                        <li>Implemented Poka-Yoke systems to reduce human error and optimize line cycle times.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patents & Certifications -->
+        <section>
+            <h2>Patents & Certifications</h2>
+            <div class="timeline">
+                <div class="patent-card">
+                    <div class="role-title">Patents Pending</div>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.5rem;">
+                        Fixture/Tooling Design Innovation for Assembly of Multiple Vehicle Frames (Indian Patent Office).
+                    </p>
+                </div>
+                <div class="patent-card">
+                    <div class="role-title">Key Certifications</div>
+                    <ul class="bullets" style="margin-top: 0.5rem;">
+                        <li>Six Sigma Green Belt (CSSGB) — TÜV SÜD</li>
+                        <li>Advanced Manufacturing Process Analysis — University at Buffalo</li>
+                        <li>Classical CFD Using ANSYS Fluent</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -188,13 +268,13 @@
         <section>
             <h2>Connect</h2>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="btn">Email Me</a>
-                <a href="https://linkedin.com" target="_blank" class="btn" style="background-color: transparent; color: var(--accent-color); border: 1px solid var(--accent-color);">LinkedIn Profile</a>
+                <a href="mailto:ajithpbalan16@gmail.com" class="btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/ajithp16" target="_blank" class="btn btn-outline">LinkedIn Profile</a>
             </div>
         </section>
 
         <footer>
-            <p>© 2026 Your Name. Powered by GitHub Pages.</p>
+            <p>© 2026 Ajith P. Powered by GitHub Pages.</p>
         </footer>
     </div>
 
